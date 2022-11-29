@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <h1>vite+vue2</h1>
+  <div class="center">
+    <h1 class="title">vite+vue2</h1>
     <p>{{ count }}</p>
-    <button @click="add()">Add</button>
+    <van-button type="default" @click="add()">Add One</van-button>
     <van-cell-group>
       <van-cell title="单元格" value="内容" />
       <van-cell title="单元格" value="内容" />
     </van-cell-group>
-    <van-button type="primary" @click="toast()">按钮</van-button>
+    <van-button type="primary" @click="toast()">Show Dialog</van-button>
   </div>
 </template>
 
@@ -38,4 +38,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped lang="scss">
+.center {
+  text-align: center;
+}
+.title {
+  color: blueviolet;
+  text-align: center;
+}
+</style>
