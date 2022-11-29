@@ -9,10 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "unplugin-vue-components": "^0.22.11",
     "vite": "^3.2.3",
     "vite-plugin-vue2": "^2.0.2"
   },
   "dependencies": {
+    "vant": "^2.12.53",
     "vue": "^2.7.14"
   }
 }
