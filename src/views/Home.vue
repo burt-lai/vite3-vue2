@@ -2,17 +2,19 @@
   <div class="center">
     <h1 class="title">vite+vue2</h1>
     <p>{{ count }}</p>
-    <van-button type="default" @click="add()">Add One</van-button>
-    <van-cell-group>
-      <van-cell title="单元格" value="内容" />
-      <van-cell title="单元格" value="内容" />
-    </van-cell-group>
+    <p>
+      <van-button type="default" @click="add()">Add One</van-button>
+    </p>
+    <p>
+      <van-button type="primary" @click="request()">测试接口</van-button>
+    </p>
     <van-button type="primary" @click="toast()">Show Dialog</van-button>
   </div>
 </template>
 
 <script>
 import { Dialog } from "vant"
+import { getUserName } from '@/api/user'
 
 export default {
   name: "Home",
@@ -24,6 +26,10 @@ export default {
   methods: {
     add() {
       this.count++
+    },
+    async request() {
+      const res = await getUserName({ name: 'zhangsan' })
+      console.log(res)
     },
     toast() {
       // Dialog({ message: "提示" })

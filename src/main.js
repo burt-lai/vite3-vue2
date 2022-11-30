@@ -2,6 +2,7 @@
 import Vue from "vue"
 import App from "./App.vue"
 import router from "./router"
+import store from "./store"
 
 // 引入函数组件的样式（其他的已经自动导入了）
 import "vant/es/toast/style"
@@ -14,6 +15,6 @@ console.log(import.meta.env)
 new Vue({
   el: "#app",
   router,
-  // store,
+  store,
   render: (h) => h(App),
 }).$mount()
