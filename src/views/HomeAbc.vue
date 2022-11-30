@@ -1,9 +1,12 @@
 <template>
-  <router-view />
+  <div>Home Abc</div>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: "HomeAbc"
 }
 </script>
+
+<style>
+</style>

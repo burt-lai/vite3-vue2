@@ -9,4 +9,9 @@ export default {
       resolvers: [VantResolver()],
     }),
   ],
+  resolve: {
+    alias: {
+      "@/": "/src/", //格式一定要写对喽不然没有代码提示或者报错
+    },
+  },
 }
