@@ -22,6 +22,15 @@ export default {
       "@/": "/src/", //格式一定要写对喽不然没有代码提示或者报错
     },
   },
+  server: {
+    proxy: {
+      "/api": {
+        target: "https://baidu.com",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
+  },
   css: {
     postcss: {
       plugins: [
