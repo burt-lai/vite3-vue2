@@ -20,6 +20,18 @@ export default [
         component: () => import("@/views/HomeAbc.vue"),
         meta: { title: "abc", keepAlive: false },
       },
+      {
+        path: "/setup",
+        name: "Setup",
+        component: () => import("@/views/Setup.vue"),
+        meta: { title: "abc", keepAlive: false },
+      },
+      {
+        path: "/setup2",
+        name: "Setup2",
+        component: () => import("@/views/Setup2.vue"),
+        meta: { title: "abc", keepAlive: false },
+      },
     ],
   },
 ]
