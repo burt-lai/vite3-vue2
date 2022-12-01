@@ -14,6 +14,8 @@
 - [x] vant2 移动端 UI 库
 - [x] vue-router@3 路由管理
 - [x] vuex3 状态管理库
+- [x] 支持 setup + compostion api
+- [x] 支持不完全的typescript
 - [x] axios 请求库
 - [x] scss css 预处理库
 - [x] postcss 自动添加浏览器厂商前缀
